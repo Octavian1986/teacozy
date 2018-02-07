@@ -63,11 +63,10 @@ header img {
 }
 
 .teaofthemonth {
-  display: flex;
   position: relative;
+  width: 1000px;
   top: 120px;
   margin: 0 auto;
-  flex-direction: column;
 }
 
 #headline h2 {
@@ -76,4 +75,20 @@ header img {
 
 #headline h4 {
   margin: 0 0 10px 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product img {
+  height: 200px;
+  width: 300px;
+  margin: 20px 20px 10px 0;
+}
+
+.products h4 {
+  margin: 0;
 }
