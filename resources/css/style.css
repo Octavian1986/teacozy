@@ -1,0 +1,79 @@
+html {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  height: 70px;
+  /*offset to top necessary in my code because the mission-background-image is partially visible on
+    top of the header when scrolling down, not sure why*/
+  top: -1px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  align-items: center;
+  /*to put the header into the foreground when scrolling. Is there another way to do this without
+    setting background-color again and using z-index? */
+  background-color: black;
+  z-index: 5;
+}
+
+header span {
+  margin: 20px;
+  text-decoration: underline;
+}
+
+header img {
+  margin-left: 10px;
+  height: 50px;
+}
+
+.mission {
+  display: flex;
+  background-image: url("../images/img-mission-background.jpg");
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  /*to reproduce the stylesheet this 62px offset is necessary in my code, not sure why exactly 62px,
+    should be 70 (height + border of the header)?*/
+  top: 62px;
+  height: 700px;
+  width: 1200px;
+}
+
+.missiontext {
+  background-color: black;
+}
+
+.mission h2 {
+  margin: 10px 0 20px 0;
+  width: 1200px;
+}
+
+.mission h4 {
+  width: 1200px;
+  margin: 0 0 10px 0;
+}
+
+.teaofthemonth {
+  display: flex;
+  position: relative;
+  top: 120px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+#headline h2 {
+  margin: 10px 0 20px 0;
+}
+
+#headline h4 {
+  margin: 0 0 10px 0;
+}
