@@ -92,3 +92,34 @@ header img {
 .products h4 {
   margin: 0;
 }
+
+.locations{
+  height: 500px;
+  width: 1200px;
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-image: url("../images/img-locations-background.jpg");
+}
+
+/*Correct margins in locations*/
+
+.locationheadline h2 {
+  margin-top: 100px 0 0 0;
+}
+
+.adresses {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  opacity: 1;
+  margin-top: 15px;
+}
+
+.location {
+  margin: 15px 20px 0 20px;
+  width: 300px;
+  background-color: black;
+}
