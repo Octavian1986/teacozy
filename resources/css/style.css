@@ -7,21 +7,19 @@ html {
   text-align: center;
 }
 
-/*Change link color*/
-
 header {
   display: flex;
   position: fixed;
   height: 70px;
-  /*offset to top necessary in my code because the mission-background-image is partially visible on
-    top of the header when scrolling down, not sure why*/
+  /* height of 70px and offset to top of 1px necessary in my code because the mission-background-image is otherwise partially visible on
+    top of the header when scrolling down, not sure why */
   top: -1px;
   width: 100%;
   border-bottom: 1px solid seashell;
   justify-content: space-between;
   align-items: center;
-  /*to put the header into the foreground when scrolling. Is there another way to do this without
-    setting background-color again and using z-index? */
+  /* to put the header into the foreground when scrolling. Is there another way to do this without
+    setting background-color again altough already set in the html-selector and using z-index as well? */
   background-color: black;
   z-index: 5;
 }
@@ -41,9 +39,7 @@ header img {
   height: 50px;
 }
 
-/* fix positioning, probly padding needed to align properly*/
-/*image size in style sheet and codecademy version differing?*/
-
+/* mission content */
 
 #mission {
   display: flex;
@@ -51,10 +47,7 @@ header img {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  position: relative;
-  /*to reproduce the stylesheet this 62px offset is necessary in my code, not sure why exactly 62px,
-    should be 70 (height + border of the header)?*/
-  top: 62px;
+  padding-top: 60px;
   height: 700px;
   width: 1200px;
 }
@@ -63,28 +56,29 @@ header img {
   background-color: black;
 }
 
-.mission h2 {
+#mission h2 {
   margin: 10px 0 20px 0;
   width: 1200px;
 }
 
-.mission h4 {
+#mission h4 {
   width: 1200px;
   margin: 0 0 10px 0;
 }
 
+/* Tea of the Month content */
+
 #tea {
-  position: relative;
   width: 1000px;
-  top: 120px;
+  padding: 60px;
   margin: 0 auto;
 }
 
-#headline h2 {
+.teaheadline h2 {
   margin: 10px 0 20px 0;
 }
 
-#headline h4 {
+.teaheadline h4 {
   margin: 0 0 10px 0;
 }
 
@@ -104,13 +98,14 @@ header img {
   margin: 0;
 }
 
+/* locations content */
+
 #locations {
   height: 500px;
   width: 1200px;
-  padding-top: 70px;
-  position: relative;
   top: 200px;
   margin: 0 auto;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   background-image: url("../images/img-locations-background.jpg");
@@ -133,12 +128,12 @@ header img {
   background-color: black;
 }
 
+/* contact and copyright info */
+
 .contact {
   height: 200px;
   width: 1200px;
   margin: 0 auto;
-  position: relative;
-  top: 180px;
 }
 
 .contact h2 {
@@ -148,6 +143,4 @@ header img {
 .copyright {
   text-align: left;
   margin-left: 20px;
-  position: relative;
-  top: 180px;
 }
